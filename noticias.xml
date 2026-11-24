@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Noticias de NewFrame</title>
+    <link>https://guti53.github.io/Proyecto-LM-PGM/</link>
+    <description>Novedades sobre reparación de dispositivos digitales, consolas y mandos en NewFrame.</description>
+    <language>es-es</language>
+
+    <item>
+      <title>¡Expandimos el negocio con envíos a nivel europeo!</title>
+      <link>https://guti53.github.io/Proyecto-LM-PGM/contacto.html</link>
+      <description>A partir del jueves 18 de noviembre aceptamos pedidos y envíos de dispositivos desde toda Europa.</description>
+      <pubDate>Thu, 18 Nov 2026 10:00:00 +0100</pubDate>
+      <guid>https://guti53.github.io/Proyecto-LM-PGM/contacto.html</guid>
+    </item>
+
+    <item>
+      <title>Reparaciones disponibles para Nintendo Switch 2</title>
+      <link>https://guti53.github.io/Proyecto-LM-PGM/contacto.html</link>
+      <description>Ya puedes enviar a reparar tu consola Nintendo Switch 2 a nuestro taller y darle una segunda vida.</description>
+      <pubDate>Tue, 10 Nov 2026 10:00:00 +0100</pubDate>
+      <guid>https://guti53.github.io/Proyecto-LM-PGM/contacto.html</guid>
+    </item>
+
+    <item>
+      <title>Nuevas guías paso a paso para mandos DualSense y Xbox Series</title>
+      <link>https://guti53.github.io/Proyecto-LM-PGM/guias.html</link>
+      <description>Consulta las herramientas necesarias y nuestros tutoriales de limpieza y reparación de stick drift.</description>
+      <pubDate>Mon, 02 Nov 2026 10:00:00 +0100</pubDate>
+      <guid>https://guti53.github.io/Proyecto-LM-PGM/guias.html</guid>
+    </item>
+  </channel>
+</rss>
