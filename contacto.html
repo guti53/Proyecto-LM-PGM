@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewFrame | Contacto y presupuesto de reparación</title>
+    <meta name="description"
+        content="Envíanos tu consulta técnica o pide presupuesto para reparar tu consola o mando en NewFrame. Consulta también nuestra ubicación y horario del taller.">
+    <link rel="icon" type="image/ico" href="imagenes/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="noticias.xml">
+</head>
+
+<body>
+    <header class="cabecera">
+        <a class="logo" href="index.html">
+            <img src="imagenes/favicon.ico" alt="Logotipo de NewFrame" width="40" height="40">
+            <span>NewFrame</span>
+        </a>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="datos.html">Datos</a></li>
+                <li><a class="activo" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <div class="rejilla-contacto">
+
+            <section class="datos-taller">
+                <h1>Contacto</h1>
+                <p>Rellene el formulario para poder contactar con nosotros o hacer un pedido. Los campos marcados como
+                    obligatorios tienen que estar rellenos para poder enviar el formulario.</p>
+
+                <h2>Dónde estamos</h2>
+                <p>
+                    <strong>Taller NewFrame</strong><br>
+                    Calle del Amor de Dios, 12<br>
+                    Madrid - 28014
+                </p>
+
+                <h3>Horario del taller</h3>
+                <ul>
+                    <li>Lunes a viernes: de 16:00 a 20:00</li>
+                    <li>Sábados: de 10:00 a 14:00</li>
+                    <li>Domingos y festivos: Cerrado.</li>
+                </ul>
+            </section>
+
+            <section class="formulario-contacto">
+                <h2>Consulta técnica o pedido</h2>
+                <form class="formulario" method="post">
+
+                    <fieldset>
+                        <legend>Sus datos</legend>
+
+                        <div class="grupo-campo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Su dispositivo</legend>
+
+                        <div class="grupo-campo">
+                            <label for="modelo">Modelo del dispositivo</label>
+                            <select id="modelo" name="modelo" required>
+                                <option value="">Elija un modelo</option>
+                                <option value="ps5">Consola PS5</option>
+                                <option value="dualsense">DualSense PS5</option>
+                                <option value="dualsense-edge">DualSense Edge PS5</option>
+                                <option value="xbox-series-x">Xbox Series X</option>
+                                <option value="xbox-series-s">Xbox Series S</option>
+                                <option value="xbox-series-controller">XBox Series Controller</option>
+                                <option value="switch-2">Nintendo Switch 2</option>
+                                <option value="pc">PC</option>
+                                <option value="portatil">Portátil</option>
+                                <option value="telefono">Teléfono</option>
+                                <option value="tamagochi">Tamagochi</option>
+                                <option value="otro">Otro dispositivo</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="cantidad">Cantidad de dispositivos</label>
+                            <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="meses">Meses de uso (aproximado)</label>
+                            <input type="number" id="meses" name="meses" min="0" max="2560">
+                        </div>
+
+                        <fieldset class="grupo-opciones">
+                            <legend>País de residencia</legend>
+                            <div class="opcion">
+                                <input type="radio" id="pais-espana" name="pais" value="espana" required>
+                                <label for="pais-espana">España</label>
+                            </div>
+                            <div class="opcion">
+                                <input type="radio" id="pais-portugal" name="pais" value="portugal">
+                                <label for="pais-portugal">Portugal</label>
+                            </div>
+                            <div class="opcion">
+                                <input type="radio" id="pais-europa" name="pais" value="otro-europa">
+                                <label for="pais-europa">Otro país de Europa</label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Su consulta</legend>
+
+                        <div class="grupo-campo">
+                            <label for="mensaje">Describa su problema brevemente</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <div class="opcion">
+                            <input type="checkbox" id="sin-garantia" name="sin-garantia" value="si">
+                            <label for="sin-garantia">Confirmo que mi dispositivo ya no tiene garantía oficial.</label>
+                        </div>
+
+                        <div class="opcion">
+                            <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
+                            <label for="privacidad">Acepto la política de privacidad.</label>
+                        </div>
+                    </fieldset>
+
+                    <button class="boton" type="submit">Enviar consulta</button>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 NewFrame. Proyecto de clase de Lenguajes de Marcas.</p>
+        <p><a href="noticias.xml">Canal RSS de noticias</a> | <a href="https://www.ifixit.com/" target="_blank"
+                rel="noopener">iFixit (guías de reparación)</a></p>
+        <p class="creditos">Imágenes: Patrón de fondo propio en SVG | Logotipo diseñado para NewFrame.</p>
+    </footer>
+
+</body>
+
+</html>
